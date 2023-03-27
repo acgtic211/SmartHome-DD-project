@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+    suitcase-reflection:
+        build: ./reflection
+        restart: always
+
+    web:
+        image: nginx
+        ports:
+            - 80:80
